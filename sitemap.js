@@ -1,0 +1,1 @@
+export default function sitemap(){const base='https://stellarisai.com';return['','/assessment','/insights','/insights/workflow-design-first','/privacy','/terms'].map(path=>({url:`${base}${path}`,lastModified:new Date()}))}

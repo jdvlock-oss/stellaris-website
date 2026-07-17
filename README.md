@@ -1,63 +1,30 @@
-# Stellaris Launch Website
+# Stellaris V2
 
-This is the launch-ready static website package for Stellaris, designed for Vercel.
-
-## Included
-
-- Updated homepage and positioning
-- Three defined commercial offers
-- Founder-led credibility section
-- AI Opportunity Assessment page
-- Insights landing page
-- First published article
-- Working contact-form API using Resend
-- Privacy Policy and Terms of Use
-- Logo mark, favicon, and social-sharing image
-- SEO metadata, sitemap, robots.txt, and web manifest
-- Vercel Web Analytics script
-- Security headers and clean URLs
-- Custom 404 page
+A production-ready Next.js website for Stellaris.
 
 ## Deploy to Vercel
 
-Upload this ZIP as a new deployment, or put the files in a GitHub repository connected to the existing Vercel project.
+1. Upload all files in this folder to the root of the GitHub repository.
+2. Vercel will detect Next.js and deploy automatically.
+3. Add these environment variables in Vercel:
+   - `RESEND_API_KEY`
+   - `CONTACT_TO_EMAIL`
+   - `CONTACT_FROM_EMAIL`
+4. Redeploy after adding environment variables.
 
-The included `vercel.json` maps clean URLs such as `/assessment` to their HTML files.
+Suggested values:
+- `CONTACT_TO_EMAIL=hello@stellarisai.com`
+- `CONTACT_FROM_EMAIL=Stellaris Website <website@stellarisai.com>`
 
-## Configure the contact form
+The sending domain must be verified in Resend.
 
-The form posts to `/api/contact`. The Vercel Function sends the message through Resend.
+## Local development
 
-1. Create a Resend account.
-2. Verify `stellarisai.com` in Resend.
-3. Create a Resend API key.
-4. In Vercel, open the Stellaris project.
-5. Go to Settings → Environment Variables.
-6. Add:
+```bash
+npm install
+npm run dev
+```
 
-   - `RESEND_API_KEY` = your Resend API key
-   - `CONTACT_TO_EMAIL` = the inbox that should receive inquiries, such as `hello@stellarisai.com`
-   - `CONTACT_FROM_EMAIL` = a verified sender, such as `Stellaris Website <website@stellarisai.com>`
+## Notes
 
-7. Redeploy after adding the variables.
-
-Until these variables are configured, the form will display a clear fallback asking the visitor to email `hello@stellarisai.com`.
-
-## Enable analytics
-
-In the Vercel project, open Analytics and enable Web Analytics. The website already includes the Vercel insights script.
-
-## Domain and email
-
-When connecting `stellarisai.com` to Vercel, preserve the MX and email-authentication DNS records used by Microsoft 365 or your email provider.
-
-Recommended mailboxes:
-- `hello@stellarisai.com`
-- `privacy@stellarisai.com`
-- `website@stellarisai.com` or another sender used by Resend
-
-## Important launch decisions
-
-The website intentionally does not include Calendly, Microsoft Bookings, or another scheduling widget.
-
-The Privacy Policy and Terms are starter documents, not jurisdiction-specific legal advice. Counsel should review them before significant commercial launch, paid marketing, or collection of sensitive or regulated data.
+The privacy policy and terms are starter content and should be reviewed by counsel before production use.
