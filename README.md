@@ -1,30 +1,41 @@
-# Stellaris V2
+# Stellaris Website Repository
 
-A production-ready Next.js website for Stellaris.
+## Status: legacy and not authoritative
 
-## Deploy to Vercel
+This repository is retained for historical reference. It is **not** the current source of truth for the Stellaris corporate website and should not be deployed as production without a formal reconciliation.
 
-1. Upload all files in this folder to the root of the GitHub repository.
-2. Vercel will detect Next.js and deploy automatically.
-3. Add these environment variables in Vercel:
-   - `RESEND_API_KEY`
-   - `CONTACT_TO_EMAIL`
-   - `CONTACT_FROM_EMAIL`
-4. Redeploy after adding environment variables.
+The current corporate website experience is maintained in the private Lovable project:
 
-Suggested values:
-- `CONTACT_TO_EMAIL=hello@stellarisai.com`
-- `CONTACT_FROM_EMAIL=Stellaris Website <website@stellarisai.com>`
+- Project: `Stellaris: Own Your Career Win`
+- Lovable project ID: `097995db-dac6-4f02-a73e-7d80eb1282c0`
+- Publication state as of 2026-07-23: private preview, not published
 
-The sending domain must be verified in Resend.
+The current Career application is maintained separately:
 
-## Local development
+- GitHub: `jdvlock-oss/stellaris-career-craft`
+- Lovable project ID: `cc804c96-077f-43d1-83c1-611c16b5c15f`
 
-```bash
-npm install
-npm run dev
-```
+The Family product is maintained separately:
 
-## Notes
+- GitHub: `jdvlock-oss/stellaris-family-hub`
+- Lovable project ID: `41faa27a-2226-4943-9b35-68ecc93c5f49`
 
-The privacy policy and terms are starter content and should be reviewed by counsel before production use.
+## Repository decision
+
+Do not add new corporate-site features here until one of the following is approved:
+
+1. Rebuild this repository from the current Lovable corporate project and make it the authoritative corporate source, or
+2. Archive this repository and formally designate another repository or monorepo package as the corporate source.
+
+Until that decision is executed, this repository is classified as `DEPRECATED` for delivery purposes.
+
+## Production safeguards
+
+- Do not connect this repository to the production Stellaris domain.
+- Do not assume legacy privacy, terms, contact, analytics, SEO, or deployment files are current.
+- Legal text requires counsel review before production use.
+- Any future source synchronization must exclude credentials, `.env` values, tokens, private data, and generated build output.
+
+## Historical note
+
+Earlier versions contained static and Next.js launch-site experiments. Those files do not establish the current product architecture or release state.
