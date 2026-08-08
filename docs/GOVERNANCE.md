@@ -29,8 +29,8 @@ It is explicitly **not** responsible for detailed product requirements, feature 
 - Planned, discussed, or designed capabilities are never presented as implemented.
 - Available, in development, planned, and exploratory capabilities are clearly distinguished.
 - No invented customer counts, testimonials, performance claims, security certifications, partnerships, pricing, or availability dates.
-- Status language is centralized in `src/lib/stellaris.ts`. Permitted product status labels: `In development`, `Private preview`, `Product program`.
-- Current recorded statuses: Stellaris Career — In development; Stellaris Family Manager — In development; CookingPlanIt — Product program (portfolio-level description only; implementation evidence not yet reconciled).
+- Status language is centralized in `src/lib/stellaris.ts`. Permitted product status labels: `In development`, `Private preview`.
+- Current recorded statuses: Stellaris Career — In development; Stellaris Family Manager — In development; CookingPlanIt — In development (a migrated build is evidenced, Portfolio HQ reconciliation is underway, and a fully audited capability set/public availability has not been confirmed).
 - "Private preview" refers to the state of this corporate website, not automatically to every product.
 - Lifecycle states used across Stellaris: IDEA, PROPOSED, APPROVED, SPECIFIED, IN_DEVELOPMENT, CODE_COMPLETE, TESTED, DEPLOYED, VALIDATED, DEPRECATED. Work is never described as built without evidence.
 
@@ -57,7 +57,7 @@ Every material change updates the affected documentation, records material produ
 
 1. Real contact routing (addresses, inbox ownership, response process).
 2. Legal review and approval of the draft Privacy, Terms, Cookies, and Accessibility pages.
-3. CookingPlanIt evidence reconciliation and status confirmation.
+3. Completion of CookingPlanIt reconciliation and confirmation of the audited capability/availability record.
 4. Production domain assignment and approval.
 5. SEO restoration (robots, sitemap, canonical, indexable metadata) after domain approval.
 6. Independent accessibility audit.
