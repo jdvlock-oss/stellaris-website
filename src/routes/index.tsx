@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/site/PageLayout";
-import { PRODUCTS, APPROACH, PORTFOLIO_NAME } from "@/lib/stellaris";
+import { PRODUCTS, APPROACH } from "@/lib/stellaris";
 
 const TITLE = "Stellaris — Intelligent systems for everyday decisions";
 const DESC =
@@ -24,7 +24,6 @@ export const Route = createFileRoute("/")({
           "@type": "Organization",
           name: "Stellaris",
           description: DESC,
-          url: "/",
         }),
       },
     ],
@@ -216,15 +215,16 @@ function Home() {
             Have a question about the portfolio?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Product interest, licensing, partnerships, pilots, or privacy — {PORTFOLIO_NAME}{" "}
-            routes inquiries to the right place.
+            Product interest, licensing, partnerships, pilots, and privacy are the inquiry
+            categories this site anticipates. Contact routing is not active during private
+            preview, so inquiries cannot be received or forwarded yet.
           </p>
           <div className="mt-8 flex justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
             >
-              Contact Stellaris →
+              Contact status and categories →
             </Link>
           </div>
         </div>
