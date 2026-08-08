@@ -163,7 +163,7 @@ export const PRODUCTS: Product[] = [
     tagline: "Practical planning for meals, recipes, and the shopping around them.",
     summary:
       "A planning platform for meals, recipes, grocery coordination, and the everyday cooking workflows that sit between deciding what to eat and getting it on the table.",
-    status: "Product program",
+    status: "In development",
     accent: {
       text: "text-cooking",
       border: "border-cooking/35",
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
       "Anyone coordinating cooking and shopping across a week",
     ],
     statusNote:
-      "CookingPlanIt is described here at portfolio level only. Implementation evidence for this product has not yet been reconciled within Stellaris Portfolio HQ, so this page deliberately makes no claim about current capabilities or availability.",
+      "CookingPlanIt is in development. A migrated build exists as evidenced work, and reconciliation within Stellaris Portfolio HQ is underway. This page describes purpose and direction at portfolio level; it does not claim a fully audited capability set or public availability.",
   },
 ];
 
